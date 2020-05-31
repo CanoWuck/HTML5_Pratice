@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!--!DOCTYPE 不是html 標籤 可以告訴瀏覽器使用的html版本-->
+<html lang="zh-tw"><!--HTML 網頁的根元素，是一個容器元素; HTML 標籤可以使用 lang 屬性指定 網頁使用的語言-->
+<head>
+    <!--包含 title、meta、style 標籤-->
+    <!--meta 可以指定網頁的編碼為 utf-8-->
+    <meta charset="utf-8"/>
+    <meta name="description" content="Head元素"/>
+    <meta name="author" content="cano"/>
+    <title>HTML 5 網頁</title>
+</head>
+<body>
+    <!--body 標籤 包含 文字、超連結、圖片、表格、清單、表單 等網頁內容-->
+    
+
+    <h3>HTML 5 網頁</h3>
+    <hr/>
+    <p>第一份 HTML5 網頁</p>
+
+    <ul>HTML 5 基本
+        <li>標籤:  html 、head、body 都可以有可無</li>
+        <li>元素和屬性不區分英文大小寫，html 、Html、HTML 都是相同標欠</li>
+        <li>元素不一定需要「結尾標籤」(End-Tag)，如果是沒有內容的元素也不需要使用 /> 符號代替結尾標籤，例如以下標籤都是合法的:
+            <P>這是一個測試</p>    
+            <br>
+            <p>這是一個測試
+            <br/>
+        </li>
+        <li>
+            標籤屬性值的引號也是可有可無，例如:下列標籤的屬性都是合法的 HTML5 屬性，如下所示:
+            <p><img src="https://images.cnblogsc.com/pic/upload/vod/2020-04/1586532603.jpg" width="184" height="244"/></p>
+        </li>
+        <li>
+            如果屬性沒有屬性值，只需使用屬性名稱即可，如下所示:
+            <option selected>
+                <input type="radio" checked>
+        </li>
+        <li>文字可以單獨存在，並不用位於HTML開始與結束標籤之中</li>
+        <li>一些舊版的屬性已經不再需要，例如:script 標籤中的 type 屬性和 html 標籤的 xmlns 屬性等。</li>
+        <li>
+            HTML 共同屬性
+            <ol>id :</ol>
+            <ol accesskey="">accesskey : 指定元素的快捷鍵來取得焦點</ol>
+            <ol dir="ltr">dir: 指定元素內容的文字方向是從左至右,或從右至左,其值可以是Itr、rtI 或 auto</ol>
+            <ol>lang : 指定 HTML 元素使用的語言</ol>
+            <ol tabindex="">tabindex : 指定按下 Tab 見移動元素取得焦點的順序</ol>
+            <ol title="指定 HTML 元素的額外資訊">title : 指定 HTML 元素的額外資訊</ol>
+        </li>
+    </ul>
+
+    <div>
+        <h2>HEAD 標籤</h2>
+        <ul>
+            <li>★包含 title、meta、style 標籤</li>
+            <li>title: 必須元素，可以顯示瀏覽器視窗上方標題列或標籤業的標題文字</li>
+            <li>meta: 提供 HTML 網頁的metadata 資料，例如:網頁描述、關鍵字、作者和最近修改四期等資訊</li>
+            <li>link: 此標籤是用來連接外部資源的檔案,主要是用來連接樣式表檔案</li>
+        </ul>
+        <code> meta http-equive="content-type" content="text/html;charset=UTF-8"</code>
+    </div>
+
+    <div>
+        <p>一版來說HTML 網頁的文字內容使使用段落來編排,使用的是 p 標籤, p 標籤可以定義段落,瀏覽器預設在之前和之後增加邊界尺寸(可以使用 CSS 的 margin 屬性來更改，如下所示:)</p>
+        <p>Javascript 原為網景公司開發的腳本語言,提供該公司瀏覽器 Netscape Navigator 開發互動網頁的功能。</p>
+        <p>HTML 已經不再支援 algin 屬性的對齊方式,如需對齊元素,請使用 CSS 的 text-align 屬性</p>
+    </div>
+</body>
+</html>
