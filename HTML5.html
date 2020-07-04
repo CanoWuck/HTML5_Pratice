@@ -59,9 +59,95 @@
     </div>
 
     <div>
+        <h1>h1~h6 是標題文字</h1>
         <p>一版來說HTML 網頁的文字內容使使用段落來編排,使用的是 p 標籤, p 標籤可以定義段落,瀏覽器預設在之前和之後增加邊界尺寸(可以使用 CSS 的 margin 屬性來更改，如下所示:)</p>
         <p>Javascript 原為網景公司開發的腳本語言,提供該公司瀏覽器 Netscape Navigator 開發互動網頁的功能。</p>
         <p>HTML 已經不再支援 algin 屬性的對齊方式,如需對齊元素,請使用 CSS 的 text-align 屬性</p>
+        <p>標籤 <code>< hr/ > 在瀏覽器中是顯示一條水平線，但HTML5 的< hr /> 是給予內容上主題分割的意義</code></p>        
+        <p><code>< br/> 是換行標籤</code></p>
+        <p>下方是範例:</p>
+        <div>
+            <a href="#hr">分割線錨點</a><br>
+            <a href="#br">換行錨點</a><br>
+            <p><code> < a href="#hr" >等於id 值 點下去則會導向那個標籤 < /a></code></p>
+            <hr>
+            <h3 id="hr">hr 分割線</h3>
+            <hr/>
+            <br/>
+            <h3 id="br">br 換行</h3>
+            
+            <p>分割線與換行範例</p>
+        </div>
     </div>
+
+    <div>
+        <h2>標示文字內容</h2>
+        <ul>
+            <li><code>< b > tag:</code><b>使用粗體字</b></li>
+            <li><code>< i > tag:</i></code><i>使用斜體字</i></li>
+            <li><code>< em > tag:</code>顯示強調文字效果，在HTML5 是強調因<em>發音</em>而改變的文字</li>
+            <li><code>< strong > tag:</code><strong>重要文字使用(HTML 4 使用)</strong></li>
+            <li><code>< mark > tag:</code> HTML 5新增，需要做記號的重點文字</li>
+            <li><code>< cite > tag:</code><cite>定義產品名稱 ex:一本書</cite></li>
+            <li><code>< small > tag:</code><small>輔助說明或小型印刷文字</small> EX:網頁最下方版權宣告</li>
+        </ul>
+    </div>
+<hr>
+    <div>
+        <h2>HTML 清單</h2>
+        <h4>項目編號(Ordered List)</h4>
+        <p>HTML 清單提供<strong>數字順序的項目編號，ol 標籤可以建立項目編號</strong></p>
+        <ol>
+            <li>項目 1</li>
+            <li>項目 2 </li>
+        </ol>
+        <p>屬性:</p>
+        <ul>            
+            <li><code> start 屬性: </code> 指定項目編號的開始</li>
+            <li> <code>type 屬性: </code> 指定項目編號是數字、英文等，EX:1、A、Ⅰ、i</li>
+            <li><code>reversed 屬性:</code> HTML5 新增屬性，指定項目編號是反向由大至小</li>
+        </ul>
+        <br/>
+        <h4>項目符號(Unordered List)</h4>        
+        <p><srong>無編號的項目符號</srong>，即在項目前是小圓形、正方形等符號</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+        <br/>
+        <h4>定義清單(Definition List)</h4>
+        <p>HTML 5 定義清單是一個<strong>任何名稱和值成對群組的結合清單</strong>，EX:詞彙說明的每一個項目是定義和說明</p>
+        <dl>
+            <dt>Javascript</dt>
+            <dd>客戶端腳本</dd>
+            <dt>HTML</dt>
+            <dd>網頁製作語言</dd>
+        </dl>
+        <p>上述 <code> < dl > </code>標籤建立定義清單;<code>< dt ></code> 清單定義項目; <code> < dd ></code>標籤描述 項目</p>
+    </div>
+    <hr/>
+    <h2>HTML5 圖片與超連結 標籤</h2>
+    <div>
+        <p><code>< a href="http:www.flag.com.tw">< h3>旗標出版社< /h3>< /a></code></p>
+        <h4>超連結 標籤的屬性:</h4>
+        <ul>
+            <li><code>href </code>屬性: 指定超連結連接的目的地，其值可以是想對URL網址/同網站的檔案名稱，EX:default.html 或 http:www.flag.com.tw</li>
+            <li><code>hreflag</code>屬性:指定連接HTML網頁的語言，EX: en、zh</li>
+            <li><code>media</code>屬性:HTML5 新屬性，可指定哪一種媒體或裝置可以最佳化處理連接的網頁文件</li>
+            <li><code>rel</code>屬性:指定目前網頁和連接網頁之前的關係，只有href 屬性存在時才能指定，EX:值alternate是替代文件; bookmark是用來作為書籤</li>
+            <li>★<code>target</code>屬性:指定超連結如何開啟目的地的HTML 網頁</li>
+            <li><code>type</code>屬性:指定連接HTML 網頁的MIME 狀態</li>
+        </ul>
+        <h4>target 屬性值:</h4>
+        <ul>
+            <li><code>_blank </code>屬性值: 在新視窗或新標籤開啟HTML</li>
+            <li><code>_self</code>屬性值: 在原視窗或標籤開啟HTML</li>
+            <li><code>_top</code>屬性值: 以全螢幕開啟HTML 網頁</li>
+            <li><code>_top</code>屬性值: 在父框架開啟 HTML 網頁</li>
+            <li><code>iframeName</code>屬性值:在指定名稱的 <code>< iframe ></code>框架開啟HTML 網頁 </li>
+        </ul>
+        <p>因為HTML5 不再支援框架頁，上述 -top、_parent 和 iframeName 屬性主要是使用在 <code>< iframe ></code>標籤</p>
+    </div>
+
 </body>
 </html>
