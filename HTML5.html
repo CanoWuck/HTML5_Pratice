@@ -147,7 +147,70 @@
             <li><code>iframeName</code>屬性值:在指定名稱的 <code>< iframe ></code>框架開啟HTML 網頁 </li>
         </ul>
         <p>因為HTML5 不再支援框架頁，上述 -top、_parent 和 iframeName 屬性主要是使用在 <code>< iframe ></code>標籤</p>
-    </div>
 
+        <a href="https://www.yahoo.com.tw">YAHOO </a>
+        <h3>圖片超連結:</h3>
+        <a href="https://www.yahoo.com.tw"><img src="https://images.cnblogsc.com/pic/upload/vod/2020-04/1586532603.jpg" width="184" height="244"/></a>
+    </div>
+    <hr/>
+    <h2>HTML5 的表格與容器標籤</h2>
+    <p>表格唯一種資料編排方式，如果網頁內容分類，我們可以使用表個將資料分類和系統化處理，表格可以重新編排原本雜亂的資料來清楚呈現欲表現的資訊。</p>
+    <p>HTML 的 <code> < div ></code>和 <code>< span ></code>標籤是一種一班用途的結構標籤它如同是一個容器，可以用來放置其他HTML 元素</p>
+    <ul>
+        <li><code>< table ></code> 標籤: 建立表格，其他表格相關標籤都位在此標籤之中</li>
+        <li><code>< tr ></code> 標籤: 定義表格的每一個表格列</li>
+        <li><code>< th ></code> 標籤: 定義表格的標題列</li>
+        <li><code>< td ></code>標籤: 定義表格列的每一個儲存格</li>
+        <li><code>< caption ></code>標籤: 定義表格的標題文字，其位置是 <code>< table ></code>標籤的第1個子元素</li>
+        <li><code>< thead ></code>標籤: 群組HTML表格的標題內容</li>
+        <li><code>< tbody ></code>標籤: 群組HTML表格的本文內容</li>
+        <li><code>< tfoot ></code>標籤: 群組HTML表格的註腳內容</li>
+    </ul>
+    <p>HTML 5 表格只支援<code>< table ></code>標籤的 border 屬性，為邊框像素宽，EX:border: 1px solid black;。HTML5 的 <code>< td ></code>其說明如下表所示:</p>
+    <ul>
+        <li>colspan 屬性: 指定表格列需要擴充幾個儲存格，及合併儲存格</li>
+        <li>rowspan 屬性: 指定表格欄需要擴充幾個儲存格，及合併儲存格</li>
+        <li>headers 屬性: 指定的屬性值是對應標題列的儲存格的 id 屬性值</li>
+    </ul>
+    <h4>建立基本HTML 表格</h4>
+    <table border="1">
+        <tr>
+            <th id="client">客戶端</th>
+            <th id="server">賜服端</th>
+        </tr>
+        <tr><td colspan="2">Ajax</td></tr>
+        <tr>
+            <td headers="client">Javascript</td>
+            <td headers="server">Asp .net</td>
+        </tr>        
+    </table>
+    <h4>建立複雜HTML 表格</h4>
+    <table border="">
+        <caption>每月存款金額</caption>
+        <thead>
+            <tr>
+                <th>月份</th>
+                <th>存款金額</th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr>
+                <td>一月</td>
+                <td>NT $5,000</td>
+            </tr>
+            <tr>
+                <td>二月</td>
+                <td>NT $1,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>存款總額</td>
+                <td>NT $6,000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h4><code>< div > 和 < span ></code>容器標籤</h4>
+    <p><code>< div ></code>標籤可以再HTML 網頁訂一個區塊</p>
 </body>
 </html>

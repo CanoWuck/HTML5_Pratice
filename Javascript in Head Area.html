@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <!--包含 title、meta、style 標籤-->
+        <!--meta 可以指定網頁的編碼為 utf-8-->
+        <meta charset="utf-8"/>
+        <meta name="description" content="Head元素"/>
+        <meta name="author" content="cano"/>
+        <title>Javascript 網頁-Head區塊的 Javascript 程式碼</title>
+        <script>
+            function showmessage(){
+                alert(" Head區塊的 Javascript 程式碼");
+            }
+        </script>
+    </head>
+    <body onload="showmessage()">
+        <h3>Javascript 程式碼的位置- Head區塊的 Javascript 程式碼</h3>
+        <p>當啟動瀏覽器載入 HTML 網頁，如果讀到 Javascript 程式碼時就會馬上執行，不過需視 Javascript 程式碼是放在哪個位置而定</p>
+        <p>事實上，我們可以在HTML 網頁內崁無限數目的 Javascript程式區塊</p>
+        <p>
+            一般來說，函數和事件處理是置於HTML 的<code>< head ></code>區塊，網頁內容或呼叫函數的程式區塊至於<code>< body ></code>
+            區塊，如果程式碼太長或同時使用在多份HTML網頁時，可以將Javascript 程式碼獨立成一個外部檔案。
+        </p>
+        <p>
+            在<code>< head ></code>區塊的 Javascript 程式碼是為了保證執行程式碼呼叫前相關函數或程式碼已經被載入
+            ，通常這個區塊的程式碼是<code>< body ></code>區塊程式碼呼叫的函數或事件處理。
+        </p>
+        <br/>
+        <hr/>
+        
+
+    </body>
+</html>
