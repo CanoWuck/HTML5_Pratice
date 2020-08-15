@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <!--包含 title、meta、style 標籤-->
+        <!--meta 可以指定網頁的編碼為 utf-8-->
+        <meta charset="utf-8"/>
+        <meta name="description" content="Head元素"/>
+        <meta name="author" content="cano"/>
+        <title>Javascript 的變數 </title>
+
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            table, th, td{
+                border:1px solid black;
+            }
+        </style>    
+
+    </head>
+    <body>
+        <h3>Javascript 的變數</h3>
+        <p>javascript 變數儲存的值可以是三種基本料型態:「字串」(String)、「數值」(Number)和「布林」(Boolean)如下表所示:</p>
+        <table>
+            <caption>變數命名與宣告</caption>
+            <tr>
+                <th>基本資料型態</th>
+                <th>說明</th>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>內含一個或多個字元，使用「'」或「"」颳起的字串</td>
+            </tr>
+            <tr>
+                <td>Number</td>
+                <td>整數或浮點數</td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>true 和 false</td>
+            </tr>
+        </table>
+        <br/>
+        <hr/>
+        <h3>Javascript 的命名原則(保留字)</h3>
+        <p>Javascript 語言的「保留字」是一些擁有特殊意義的名稱，Javascript 的命名規則 如下所示:</p>
+        <table>
+            <tr>
+                <td>break</td>
+                <td>case</td>
+                <td>catch</td>
+                <td>continute</td>
+                <td>debugger</td>
+            </tr>
+            <tr>
+                <td>default</td>
+                <td>delete</td>
+                <td>do</td>
+                <td>else</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>finally</td>
+                <td>for</td>
+                <td>function</td>
+                <td>if</td>
+                <td>in</td>
+            </tr>
+            <tr>
+                <td>instanceof</td>
+                <td>new</td>
+                <td>null</td>
+                <td>return</td>
+                <td>switch</td>
+            </tr>
+            <tr>
+                <td>this</td>
+                <td>throw</td>
+                <td>true</td>
+                <td>try</td>
+                <td>typeof</td>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td>void</td>
+                <td>while</td>
+                <td>with</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <br/>
+        <hr/>
+        <h3>變數的宣告</h3>
+        <p>在Javascript 程式碼是使用 var 指令宣告變數</p>
+        <div>
+            <span>範例:</span>
+            <code>var strName,intBalance;</code>
+            <br/>
+            <p><code>var strName = "基本功";</code></p>
+            <p><code>var intBalance = 1000;</code></p>
+            <p><code>var blnSex = true;</code></p>                
+        </div>
+        <br/>
+        <hr/>
+        <h4>判斷 Javascript 的變數是否存在</h4>
+        <div>
+            <p>Javascript 程式碼的變數需要使用 var 宣告或以指定敘述來隱藏宣告，對於一個變數，</p>
+            <p>程式碼如何知道他是否存在，所謂存在是指變數擁有值，而不是 undefined 資料型態</p>
+            <p><code> if (intBalance)</code></p>
+            <p>&nbsp;&nbsp;<code>document.write("intBalance 存在")</code></p>
+            <p><code>else</code></p>
+            <p>&nbsp;&nbsp;<code>document.write("intBalance 不存在")</code></p>
+            <p>上述 if 條件檢查變數值是否為 undefined, 如果 false 表示存在,否則變數不存在，問題是變數 intBalance 需要是已經宣告的變數,如果變數根本沒有宣告</p>
+            <p>此時的 if 條件會導致 javascript 執行錯誤,不過 在劉爛氣並不會顯示錯誤訊息,只是根本忽略此 if 條件。</p>
+        </div>
+        <br/>
+        <hr/>
+        <h4>Javascript 資料型態</h4>
+        <div>
+            <p>Javascript 變數的基本資料型態除了數值、布林、和字串型態外，還有物件和陣列,特殊資料型態 Null 和 Undefined 。</p>
+
+            <p>當 Javascript 變數值是 0 、null、undefined 時 ，其布林值為 false ; </p>
+        </div>
+        <br/>
+        <hr/>
+        <h4>Escape 逸出字元</h4>
+        <div>
+            <table>
+                <tr>
+                    <th>Escape 逸出字元</th>
+                    <th>說明</th>
+                </tr>
+                <tr>
+                    <td>\b</td>
+                    <td>bacaspace 鍵</td>
+                </tr>
+                <tr>
+                    <td>\f</td>
+                    <td>FF,Form,feed</td>
+                </tr>
+                <tr>
+                    <td>\n</td>
+                    <td>LF,Line,feed 換行符號</td>
+                </tr>
+                <tr>
+                    <td>\r</td>
+                    <td>CR,Enter 鍵</td>
+                </tr>
+                <tr>
+                    <td>\t</td>
+                    <td>Tab 鍵</td>
+                </tr>
+                <tr>
+                    <td>\' 「'」符號</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>\"「"」符號</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>\\ 「\」符號</td>
+                    <td></td>
+                </tr>
+               
+            </table>
+        </div>
+        <br/>
+        <hr/>
+        <h4>資料型態的轉換函數</h4>
+        <div>
+            <h5>parseInt () 函數</h5>
+            <p>將字串變數值開頭的數字轉換成整數，如果字串開頭不是數字，就回傳Nan(not a number)</p>
+            <br/>
+            <h5>parseFloat () 函數</h5>
+            <p>將字串變數值開頭的浮點數字串轉換成浮點數。如果字串開頭不是數字，就回傳NaN</p>
+            <br/>
+            <h5>eval() 函數</h5>
+            <p>將運算式的字串參數當作運算式，傳回運算式的計算結果</p>
+            <table>
+                <tr>
+                    <th>eval () 函數</th>
+                    <th>值</th>
+                    <th>說明</th>
+                </tr>
+                <tr>
+                    <td>eval ("20+ 4 * 5")</td>
+                    <td>40</td>
+                    <td>算術運算式</td>
+                </tr>
+                <tr>
+                    <td>eval ("intBalance = 1000")</td>
+                    <td>1000</td>
+                    <td>指定運算式</td>
+                </tr>
+                <tr>
+                    <td>eval ("5 > 4)</td>
+                    <td>true</td>
+                    <td>邏輯或比較運算式</td>
+                </tr>
+            </table>
+            <br/>
+            <h5>typeof() 函數</h5>
+            <p>typeof() 運算子可以取得變數的資料型態，也就是 string、number、boolean、undefined、object 等資料型態</p>
+        </div>
+        
+        
+
+
+
+
+
+
+    <script>
+        var strName = "基本功";
+        var intBalance = 1000;
+        var blnSex = true;
+
+        document.write("帳戶名稱:"+ strName+ "<br/>");
+        document.write("性別:"+ blnSex+ "<br/>");
+        document.write("帳戶餘額:"+ intBalance+ "<br/>");
+    </script>
+    </body>
+</html>

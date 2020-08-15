@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <!--包含 title、meta、style 標籤-->
+        <!--meta 可以指定網頁的編碼為 utf-8-->
+        <meta charset="utf-8"/>
+        <meta name="description" content="Head元素"/>
+        <meta name="author" content="cano"/>
+        <title>Javascript 的各種迴圈 </title>
+
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            table, th, td{
+                border:1px solid black;
+            }
+        </style>    
+
+    </head>
+    <body>
+        <h3>for/in 迴圈描述</h3>
+        <div>
+            <p>for/in 迴圈與 for 迴圈敘述十分相似，不過 for/in 迴圈主要是用來存取物件的所有屬性，或陣列元素，如下所示:</p>
+            <p><code>for(prop in objetAdress){</code></p>
+            <p>&nbsp;&nbsp;<code>document.write("屬性:"+prop+"="+objetAdress[prop]+"<br/>")</code></p>
+            <p>上述 for/in 迴圈的程式碼變數 objectAddress 是一個物件，prop 可以取得屬性名稱，這個迴圈可以取得物件的所有屬性。</p>
+        </div>
+        
+        <br/>
+        <hr/>
+        <h3>繼續和跳出迴圈</h3>
+        <div>
+            <h5>break 關鍵字:</h5>
+            <p>當某些條件成立時，強迫終止迴圈的執行，如同switch 條件，使用 break 關鍵字跳出程式區塊</p>
+            <h5>continute 關鍵字:</h5>
+            <p>可以馬上繼續下一次迴圈的執行，不過他並不會執行程式區塊中位在continute 關鍵字之後的程式碼，如果使用在 for 或 for/in 迴圈一樣也會自動更新計數器變數。</p>
+        </div>
+        <br/>
+        <hr/>
+
+        <script>
+        var prop;
+        var objectAddress = new Object(); //建立物件
+        objectAddress.name = "ABC";
+        objectAddress.age = "40";
+        objectAddress.phone = "02-22222222";
+        
+        //for/in 迴圈
+        for(prop in objectAddress){
+            document.write("屬性:"+prop+"="+objectAddress[prop]+"<br/>"+"<br/>");
+        }
+
+        var arrTips = new Array(100,200,300); //建立陣列
+        // for/in 迴圈
+        for(ele in arrTips){
+            document.write("元素:"+ele+"="+arrTips[ele]+"<br/>");
+        }
+        </script>
+    </body>
+    
+</html>

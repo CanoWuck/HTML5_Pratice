@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <!--包含 title、meta、style 標籤-->
+        <!--meta 可以指定網頁的編碼為 utf-8-->
+        <meta charset="utf-8"/>
+        <meta name="description" content="Head元素"/>
+        <meta name="author" content="cano"/>
+        <title>Javascript 函數與程式偵錯 </title>
+
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            table, th, td{
+                border:1px solid black;
+            }
+        </style>    
+
+    </head>
+    <body>
+        <h3>Javascript 內建函數</h3>
+        <div>
+            <ul>
+                <li>escape () 函數: 使用URL 編碼傳入的參數字串，可以傳回加碼後的字串如下所示: <code> strURLcode = escape(strMsg);</code></li>
+                <li>unescape() 函數: 解碼參數的URL 編碼字串，可以傳回還原成編碼前的原始字串，如下所示:<code>strOriginal = unescape(strURLcode);</code></li>
+            </ul>
+            <table>
+                <tr>
+                    <th>字串的字元</th>
+                    <th>說明</th>
+                </tr>
+                <tr>
+                    <td>英文字母和數值</td>
+                    <td>不進行編碼</td>
+                </tr>
+                <tr>
+                    <td>空白、標點符號</td>
+                    <td>轉換成%XX字串，XX為十六進為 ASCII碼，例如:空白字元轉換成 %20</td>
+                </tr>
+                <tr>
+                    <td>中文字</td>
+                    <td>轉換成 %uXXX字串，XXXX為十六進為統一字元碼，例如:「網」轉換成%u7DB2</td>
+                </tr>
+            </table>
+        </div>
+        
+        <br/>
+        <hr/>
+        
+
+        <script>
+            //變數宣告
+            var strMsg="HTML 5 + CSS 3 + Javascript 網頁製作徹底研究";
+            var strURLcode, strOriginal;
+            strURLcode = escape(strMsg); //進行編碼
+            document.write("原始字串 : "+ strMsg + "<br/>");
+            document.write("URL編碼 : "+ strURLcode + "<br/>");
+
+            sreOriginal = unescape(strURLcode); //還原字串
+            document.write("還原的字串 : "+ strOriginal + "<br/>");
+        </script>
+    </body>
+    
+</html>
