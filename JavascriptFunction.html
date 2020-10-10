@@ -47,7 +47,32 @@
         
         <br/>
         <hr/>
-        
+
+        <h3>建立 Javascript 函數</h3>
+        <div>
+            <p>Javascript 函數是由function 關鍵字、函數名稱和程式區塊組成，如下所示:<code>function writeString(){ document.write("歡迎使用 Javascript 函數!") }</code></p>
+            <p>擁有參數的 Javascript 函數:<code>function writeNString(strMsg,intnumber){  }</code></p>
+            <p>
+                Javascript 函數的傳回值: <code> convert2F(c){ var f; f = (9.0*c)/5.0+32.0; return f; } </code>
+                <br/>
+                使用 函式:<code>var f = convert2F(20);</code>
+            </p>
+            <table>
+                <tr><th>資料型態</th><th>方式</th><th>說明</th></tr>
+                <tr><td>數值、字串和布林</td><td>傳值</td><td>參數傳遞和比較操作都是使用傳值方式</td></tr>
+                <tr><td>物件、陣列和函數</td><td>傳址</td><td>參數傳遞和比較操作都是使用傳址方式</td></tr>
+                <tr><td>字串物件</td><td>傳址</td><td>參數傳遞和比較操作都是使用傳址方式</td></tr>
+            </table>
+            <hr/>
+            <p><code>var arra = new Array("a","b","c");</code>//建立陣列arra</p>
+            <p><code>var arrb = new Array("a","b","c");</code>//建立陣列arrb</p>
+            <p><code>document.write((arra==arrb));</code></p>
+            <p><code>document.write((arra.toString()==arrb.toString()));</code></p>
+            <p>上述程式碼建立陣列物件 arra 和 arrb 陣列元素相同，如果直接比較兩個陣列，因為是使用傳址。所以結果為 false。</p>
+            <p>如果需要檢查兩個陣列的元素內容是否相同，請使用 toString() 方法，此時為true</p>
+        </div>
+        <br/>
+        <hr/>
 
         <script>
             //變數宣告
